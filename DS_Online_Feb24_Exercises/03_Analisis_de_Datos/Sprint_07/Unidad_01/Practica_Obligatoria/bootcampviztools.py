@@ -167,7 +167,7 @@ def plot_combined_graphs(df, columns, whisker_width=1.5, bins = None):
     if num_cols:
         
         fig, axes = plt.subplots(num_cols, 2, figsize=(12, 5 * num_cols))
-        print(axes.shape)
+        #print(axes.shape)
 
         for i, column in enumerate(columns):
             if df[column].dtype in ['int64', 'float64']:
